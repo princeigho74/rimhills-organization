@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RIMHILLS Hotel & Suites - Luxury, Classic, Executive and Apartment rooms in Ughelli and Abuja. Event centre, garden, game house, sports view, pepper soup, barbecue, and suya.">
+  <meta name="keywords" content="RIMHILLS Hotel, Hotel in Ughelli, Hotel in Abuja, Event Centre, Luxury Rooms, Barbecue, Suya, Pepper Soup">
+  <meta name="author" content="Happy Igho Umukoro">
+  <title>RIMHILLS Hotel & Suites</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: url('https://picsum.photos/1920/600?hotel') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px black;
+    }
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    main {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .rooms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .room {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .room h3 {
+      margin: 10px 0;
+    }
+    .room p {
+      font-weight: bold;
+      color: #006600;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #575757;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to RIMHILLS Hotel & Suites</h1>
+    <p>Luxury • Comfort • Hospitality</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#booking">Booking</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p><strong>Ughelli Branch:</strong> Palace Street, Off New Road, Oteri.</p>
+      <p><strong>Abuja Branch:</strong> Rufus Ebegba Street, Off Jikwoyi, Abuja.</p>
+      <p>At RIMHILLS Hotels, there’s a room for everyone. Enjoy our serene gardens for seat-outs, event centre for weddings and ceremonies, game house, sports viewing lounge, pepper soup, barbecue, and suya spot.</p>
+    </section>
+
+    <section id="rooms">
+      <h2>Our Rooms</h2>
+      <div class="rooms">
+        <div class="room">
+          <h3>Classic Room</h3>
+          <p>₦15,000</p>
+        </div>
+        <div class="room">
+          <h3>Executive Room</h3>
+          <p>₦20,000</p>
+        </div>
+        <div class="room">
+          <h3>Luxury Room</h3>
+          <p>₦50,000</p>
+        </div>
+        <div class="room">
+          <h3>Apartment</h3>
+          <p>₦100,000</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>Book a Room</h2>
+      <form id="bookingForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="room">Select Room</label>
+        <select id="room" name="room" required>
+          <option value="">--Choose a Room--</option>
+          <option value="Classic - ₦15,000">Classic - ₦15,000</option>
+          <option value="Executive - ₦20,000">Executive - ₦20,000</option>
+          <option value="Luxury - ₦50,000">Luxury - ₦50,000</option>
+          <option value="Apartment - ₦100,000">Apartment - ₦100,000</option>
+        </select>
+
+        <label for="checkin">Check-in Date</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-out Date</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+
+    <section id="facilities">
+      <h2>Facilities</h2>
+      <ul>
+        <li>Beautiful Garden for Seat-outs</li>
+        <li>Event Centre for Weddings and Ceremonies</li>
+        <li>Game House & Sports Viewing Lounge</li>
+        <li>Pepper Soup, Barbecue & Suya</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Phone/WhatsApp:</strong> <a href="tel:+2347054330483">07054330483</a></p>
+      <p><strong>Email:</strong> <a href="mailto:rebegba@gmail.com">rebegba@gmail.com</a></p>
+      <p><strong>Managing Director:</strong> Dr. Rufus Ebegba</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed by <strong>Happy Igho Umukoro</strong> &copy; 2025</p>
+  </footer>
+
+  <script>
+    // Handle booking form
+    document.getElementById("bookingForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      let name = document.getElementById("name").value;
+      let room = document.getElementById("room").value;
+      let checkin = document.getElementById("checkin").value;
+      let checkout = document.getElementById("checkout").value;
+
+      alert("Booking Confirmed!\n\nName: " + name + "\nRoom: " + room + "\nCheck-in: " + checkin + "\nCheck-out: " + checkout);
+    });
+  </script>
+
+</body>
+</html>
